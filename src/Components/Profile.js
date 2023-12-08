@@ -4,7 +4,7 @@ import { ChevronRight } from 'lucide-react';
 const Profile = ({ item }) => {
     console.log(item.img);
     return (
-        <div className='flex items-center h-20 w-52 border border-gray-300'>
+        <div key={item.index} className='flex items-center h-20 w-52 border border-gray-300'>
             <img src={item.img} className='w-10 h-10 ml-2 rounded-full' />
             <div className='flex flex-col ml-2'>
                 <div className='w-8'>
